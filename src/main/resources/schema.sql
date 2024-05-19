@@ -22,21 +22,3 @@ CREATE TABLE game (
 	PRIMARY KEY(gameid),
 	FOREIGN KEY (devsid) REFERENCES devs (devsid) ON DELETE CASCADE
 );
-
-CREATE TABLE genres (
-	genres int NOT NULL AUTO_INCREMENT,
-	action varchar(30) NOT NULL,
-	platformers varchar(30) NOT NULL,
-	rpg varchar(30) NOT NULL
-	adventure varchar(30) NOT NULL,
-	PRIMARY KEY(genres)
-);
-
-CREATE TABLE Jointables (
-	devsid int NOT NULL,
-	gameid int NOT NULL,
-	genres int NOT NULL,
-	FOREIGN KEY (devid) REFERENCES game (gameid) ON DELETE CASCADE,
-	FOREIGN KEY (gameid) REFERENCES genres (genres) ON DELETE CASCADE,
-	FOREIGN KEY (genres) REFERENCES devs (devsid) ON DELETE CASCADE
-);

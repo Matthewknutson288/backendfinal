@@ -22,16 +22,10 @@ public class game {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long gameid;
-	
-	@EqualsAndHashCode.Exclude
 	private String Mario;
-	@EqualsAndHashCode.Exclude
 	private String Sonic;
-	@EqualsAndHashCode.Exclude
 	private String Zelda;
-	@EqualsAndHashCode.Exclude
 	private String FinalFantasy;
-	@EqualsAndHashCode.Exclude
 	private String Metroid;
 	
 	@EqualsAndHashCode.Exclude
@@ -49,6 +43,41 @@ public class game {
 			inverseJoinColumns = @JoinColumn(name = "genres")
 )
 	private Set<genres> genres = new HashSet<>();
+
+	public static Long getgameid() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static String getSonic() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static String getMario() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static String getZelda() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static String getFinalFantasy() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static String getMetroid() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static game[] getgame() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

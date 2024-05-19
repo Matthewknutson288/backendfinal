@@ -1,4 +1,4 @@
-INSERT INTO game (name) VALUES ('Zelda');
+INSERT INTO game (name) VALUES ('Zelda);
 INSERT INTO game (name) VALUES ('Mario');
 INSERT INTO game (name) VALUES ('Sonic');
 INSERT INTO game (name) VALUES ('Metroid');
